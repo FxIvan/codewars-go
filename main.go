@@ -3,10 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/codewars/toWeirdCase"
+	_"github.com/codewars/toWeirdCase"
+	"github.com/codewars/method"
 )
 
 func main(){
-	output := toWeirdCase.ToWeirdCaseFix("This is a test Looks like you passed")
-	fmt.Println(output)
+	//output := toWeirdCase.ToWeirdCaseFix("This is a test Looks like you passed")
+	lastElementArray := method.LastElement([]string{"hola","chau","como_estas"});
+	fmt.Println(lastElementArray);
 }
