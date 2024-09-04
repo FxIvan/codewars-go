@@ -12,6 +12,11 @@ func main(){
 	//lastElementArray := method.LastElement([]string{"hola","chau","como_estas"});
 	//deleteLastElementArray := method.PopElement([]string{"hola","chau","como_estas"})
 	//unshiftElement := method.Unshift([]string{"hola","chau","como_estas"}, "holaaaaa")
-	encodeURI := method.EncodeURI("http://www.codewars.com/kata/test/ejemplo/te#t/$ola/ch#u/como+estas/");
-	fmt.Println(encodeURI);
+	//encodeURI := method.EncodeURI("http://www.codewars.com/kata/test/ejemplo/te#t/$ola/ch#u/como+estas/");
+
+	a1 := method.StringSlice{"a", "b", "c"}
+	a2 := method.StringSlice{"d", "e", "f"}
+
+	result := a1.ConcatArray(a2)
+	fmt.Println(result);
 }

@@ -6,6 +6,8 @@ import(
 	"github.com/codewars/library"
 )
 
+type StringSlice []string
+
 func LastElement(arr []string) string{
 	return arr[len(arr)-1]
 }
@@ -38,4 +40,8 @@ func EncodeURI(url string) string{
 	}
 
 	return urlEncode
+}
+
+func (sl StringSlice) ConcatArray(arr StringSlice) StringSlice{
+	return append(sl, arr...)
 }
