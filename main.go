@@ -4,14 +4,8 @@ import (
 	"fmt"
 
 	_"github.com/codewars/toWeirdCase"
-	_"github.com/codewars/method"
+	"github.com/codewars/method"
 )
-
-type ProxyValue struct{
-	delete func(prop []string, valueDeleted string) ([]string,error);
-	set func(prop []string, valueAdd string) ([]string,error);
-}
-
 
 func main(){
 	//output := toWeirdCase.ToWeirdCaseFix("This is a test Looks like you passed")
@@ -24,27 +18,34 @@ func main(){
 	// a2 := method.StringSlice{"d", "e", "f"}
 	// result := a1.ConcatArray(a2)
 
-	handler := ProxyValue{
-		delete: func(prop []string, valueDeleted string) ([]string,error){
-			var newArray []string
-			for index,value := range prop {
-				if prop[index] != valueDeleted {
-					newArray = append(newArray, value)
-                }
-			}
-			return newArray, nil
-		},
-		set: func(prop []string, valueAdd string) ([]string,error){
-			return append(prop, valueAdd),nil
-		},
-	}
+	// handler := ProxyValue{
+	// 	delete: func(prop []string, valueDeleted string) ([]string,error){
+	// 		var newArray []string
+	// 		for index,value := range prop {
+	// 			if prop[index] != valueDeleted {
+	// 				newArray = append(newArray, value)
+    //             }
+	// 		}
+	// 		return newArray, nil
+	// 	},
+	// 	set: func(prop []string, valueAdd string) ([]string,error){
+	// 		return append(prop, valueAdd),nil
+	// 	},
+	// }
 
-	resultHandler, err := handler.delete([]string{"hola","chau","como_estas"}, "chau")
-	resultSet, err := handler.set(resultHandler, "holaaaaa")
+	proxy := method.NewProxyValue()
+
+	resultHandler, err := proxy.Delete([]string{"hola", "chau", "como_estas"}, "chau")
 	if err != nil {
-        fmt.Println(err)
-    }
-
-	fmt.Println(resultHandler)
-	fmt.Println(resultSet)
+		fmt.Println("Error en Delete:", err)
+	}
+	
+	resultSet, err := proxy.Set(resultHandler, "holaaaaa")
+	if err != nil {
+		fmt.Println("Error en Set:", err)
+	}
+	
+	// Mostrar resultados
+	fmt.Println("ResultHandler:", resultHandler)
+	fmt.Println("ResultSet:", resultSet)
 }

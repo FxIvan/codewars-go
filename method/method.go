@@ -6,6 +6,11 @@ import(
 	"github.com/codewars/library"
 )
 
+type ProxyValue struct {
+    Delete func(prop []string, valueDeleted string) ([]string, error)
+    Set    func(prop []string, valueAdd string) ([]string, error)
+}
+
 type StringSlice []string
 
 func LastElement(arr []string) string{
@@ -44,4 +49,21 @@ func EncodeURI(url string) string{
 
 func (sl StringSlice) ConcatArray(arr StringSlice) StringSlice{
 	return append(sl, arr...)
+}
+
+func NewProxyValue() *ProxyValue {
+    return &ProxyValue{
+        Delete: func(prop []string, valueDeleted string) ([]string, error) {
+            var newArray []string
+            for _, value := range prop {
+                if value != valueDeleted {
+                    newArray = append(newArray, value)
+                }
+            }
+            return newArray, nil
+        },
+        Set: func(prop []string, valueAdd string) ([]string, error) {
+            return append(prop, valueAdd), nil
+        },
+    }
 }
