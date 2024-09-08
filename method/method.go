@@ -67,3 +67,14 @@ func NewProxyValue() *ProxyValue {
         },
     }
 }
+
+func At(arr []string, index int) []string{
+	var valueindex int
+	if index < 0 {
+		valueindex = len(arr) + index
+		return arr[valueindex:]
+	}else{
+		valueindex = index
+		return []string{arr[valueindex]}
+	}
+}

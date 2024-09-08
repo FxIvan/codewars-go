@@ -33,19 +33,22 @@ func main(){
 	// 	},
 	// }
 
-	proxy := method.NewProxyValue()
 
-	resultHandler, err := proxy.Delete([]string{"hola", "chau", "como_estas"}, "chau")
-	if err != nil {
-		fmt.Println("Error en Delete:", err)
-	}
+	//Objetos de funciones
+	// proxy := method.NewProxyValue()
+
+	// resultHandler, err := proxy.Delete([]string{"hola", "chau", "como_estas"}, "chau")
+	// if err != nil {
+	// 	fmt.Println("Error en Delete:", err)
+	// }
 	
-	resultSet, err := proxy.Set(resultHandler, "holaaaaa")
-	if err != nil {
-		fmt.Println("Error en Set:", err)
-	}
-	
+	// resultSet, err := proxy.Set(resultHandler, "holaaaaa")
+	// if err != nil {
+	// 	fmt.Println("Error en Set:", err)
+	// }
+	//Fin de Objetos de funciones
+
+	value := method.At([]string{"hola","chau","como_estas","fin"},-1)
 	// Mostrar resultados
-	fmt.Println("ResultHandler:", resultHandler)
-	fmt.Println("ResultSet:", resultSet)
+	fmt.Println("value:", value)
 }
