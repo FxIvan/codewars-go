@@ -78,3 +78,26 @@ func At(arr []string, index int) []string{
 		return []string{arr[valueindex]}
 	}
 }
+
+func CopyWithin(arr []string, target int, start int) []string{
+	
+	// Complejidad de O(n),
+	// elementTarget := arr[target]
+	// var newArray []string
+	// for index,value := range arr{
+	// 	if index == start{
+	// 		newArray = append(newArray,elementTarget)
+	// 	}else{
+	// 		newArray = append(newArray,value)
+	// 	}
+	// }
+	// return newArray
+
+	//Este es una mejora, en terminos de eficencia. Ya que no se itera por cada elemento del array
+	newArray := make([]string,len(arr))
+	copy(newArray,arr)
+
+	newArray[start] = newArray[target]
+
+	return newArray
+}

@@ -48,7 +48,8 @@ func main(){
 	// }
 	//Fin de Objetos de funciones
 
-	value := method.At([]string{"hola","chau","como_estas","fin"},-1)
+	//value := method.At([]string{"hola","chau","como_estas","fin"},-1)
 	// Mostrar resultados
+	value := method.CopyWithin([]string{"hola","chau","como_estas","fin"},0,3)
 	fmt.Println("value:", value)
 }
