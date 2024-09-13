@@ -1,9 +1,10 @@
 package method
 
 import(
-	_"fmt"
+	"fmt"
 	"strings"
 	"github.com/codewars/library"
+	"github.com/codewars/quickFind"
 )
 
 type ProxyValue struct {
@@ -94,10 +95,15 @@ func CopyWithin(arr []string, target int, start int) []string{
 	// return newArray
 
 	//Este es una mejora, en terminos de eficencia. Ya que no se itera por cada elemento del array
-	newArray := make([]string,len(arr))
-	copy(newArray,arr)
+	// newArray := make([]string,len(arr))
+	// copy(newArray,arr)
 
-	newArray[start] = newArray[target]
+	// newArray[start] = newArray[target]
 
-	return newArray
+	// Algoritmo Find-Query y Quick-find
+	// value := quickFind.NewQuickFindUF(10)
+	// fmt.Println("value:",value)
+	// value.Unir(2,3)
+	// value.VerifyJoint(2,4)
+	return nil
 }
