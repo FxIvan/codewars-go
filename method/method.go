@@ -101,9 +101,9 @@ func CopyWithin(arr []string, target int, start int) []string{
 	// newArray[start] = newArray[target]
 
 	// Algoritmo Find-Query y Quick-find
-	// value := quickFind.NewQuickFindUF(10)
-	// fmt.Println("value:",value)
-	// value.Unir(2,3)
-	// value.VerifyJoint(2,4)
+	value := quickFind.NewQuickFindUF(10)
+	fmt.Println("value:",value)
+	value.Unir(2,3)
+	value.VerifyJoint(2,4)
 	return nil
 }

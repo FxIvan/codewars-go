@@ -1,0 +1,8 @@
+Sep 14 12:01:25 ftpserver ftpd[27540]: FTP session opened for user 'admin' from 192.168.1.102
+Sep 14 12:02:01 ftpserver ftpd[27541]: Uploaded file /uploads/backup.zip from 192.168.1.102 (Size: 1.2 GB)
+Sep 14 12:03:15 ftpserver ftpd[27542]: Downloaded file /downloads/logs.tar.gz to 192.168.1.103 (Size: 234 MB)
+Sep 14 12:04:10 ftpserver ftpd[27543]: Connection closed by user 'guest'
+
+127.0.0.1 - - [14/Sep/2024:13:47:12 +0000] "GET /index.html HTTP/1.1" 200 1043 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+127.0.0.1 - - [14/Sep/2024:13:47:14 +0000] "POST /login HTTP/1.1" 302 1543 "/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+192.168.1.100 - - [14/Sep/2024:13:48:01 +0000] "GET /assets/logo.png HTTP/1.1" 200 5234 "http://localhost/index.html" "Mozilla/5.0 (Windows NT 10.0)"

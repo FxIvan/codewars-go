@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 
+	"github.com/codewars/searchWord"
 	_"github.com/codewars/toWeirdCase"
-	"github.com/codewars/method"
+	_"github.com/codewars/method"
 )
 
 func main(){
@@ -50,6 +51,9 @@ func main(){
 
 	//value := method.At([]string{"hola","chau","como_estas","fin"},-1)
 	// Mostrar resultados
-	value := method.CopyWithin([]string{"hola","chau","como_estas","fin"},0,3)
-	fmt.Println("value:", value)
+	// value := method.CopyWithin([]string{"hola","chau","como_estas","fin"},0,3)
+	// fmt.Println("value:", value)
+
+	line := searchWord.SearchWord()
+	fmt.Println("line:",line)
 }
