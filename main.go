@@ -1,11 +1,13 @@
 package main
 
 import (
-	"fmt"
+	_"fmt"
 
-	"github.com/codewars/searchWord"
+	_"github.com/codewars/searchWord"
+	_"github.com/codewars/object"
 	_"github.com/codewars/toWeirdCase"
 	_"github.com/codewars/method"
+	"github.com/codewars/searchJSON"
 )
 
 func main(){
@@ -54,6 +56,11 @@ func main(){
 	// value := method.CopyWithin([]string{"hola","chau","como_estas","fin"},0,3)
 	// fmt.Println("value:", value)
 
-	line := searchWord.SearchWord()
-	fmt.Println("line:",line)
+	// line := searchWord.SearchWord()
+	// fmt.Println("line:",line)
+
+	//Buscar alguna valor de una propiedad en un array de objetos
+	// folderPath := "./allJson" // Ruta a la carpeta donde están los archivos JSON
+    // keyword := "Liga Profesional Argentina"
+    // searchJSON.SearchJSONWordKey(keyword, folderPath)
 }
