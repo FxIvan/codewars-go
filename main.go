@@ -8,6 +8,7 @@ import (
 	_"github.com/codewars/toWeirdCase"
 	_"github.com/codewars/method"
 	"github.com/codewars/searchJSON"
+	_"github.com/codewars/nodeTree"
 )
 
 func main(){
@@ -60,7 +61,12 @@ func main(){
 	// fmt.Println("line:",line)
 
 	//Buscar alguna valor de una propiedad en un array de objetos
-	// folderPath := "./allJson" // Ruta a la carpeta donde están los archivos JSON
-    // keyword := "Liga Profesional Argentina"
-    // searchJSON.SearchJSONWordKey(keyword, folderPath)
+	folderPath := "./tablasTemporadas" // Ruta a la carpeta donde están los archivos JSON
+    keyword := "Olympics Men"
+    searchJSON.SearchObjectTeam(keyword, folderPath)
+
+	// Buscada de arbol inOrder
+	// nodeTree.RecorrerEjemplo()
+
+	
 }
