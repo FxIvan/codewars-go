@@ -61,9 +61,9 @@ func main(){
 	// fmt.Println("line:",line)
 
 	//Buscar alguna valor de una propiedad en un array de objetos
-	folderPath := "./tablasTemporadas" // Ruta a la carpeta donde están los archivos JSON
-    keyword := "Olympics Men"
-    searchJSON.SearchObjectTeam(keyword, folderPath)
+	// folderPath := "./tablasTemporadas" // Ruta a la carpeta donde están los archivos JSON
+    // keyword := "Olympics Men"
+    // searchJSON.SearchObjectTeam(keyword, folderPath)
 
 	// Buscada de arbol inOrder
 	// nodeTree.RecorrerEjemplo()
