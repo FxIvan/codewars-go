@@ -1,17 +1,19 @@
 package main
 
 import (
-	_"fmt"
+	"fmt"
+	_ "fmt"
 
-	_"github.com/codewars/searchWord"
-	_"github.com/codewars/object"
-	_"github.com/codewars/toWeirdCase"
-	_"github.com/codewars/method"
-	"github.com/codewars/searchJSON"
-	_"github.com/codewars/nodeTree"
+	"github.com/codewars/alternativeCapitalization"
+	_ "github.com/codewars/method"
+	_ "github.com/codewars/nodeTree"
+	_ "github.com/codewars/object"
+	_ "github.com/codewars/searchJSON"
+	_ "github.com/codewars/searchWord"
+	_ "github.com/codewars/toWeirdCase"
 )
 
-func main(){
+func main() {
 	//output := toWeirdCase.ToWeirdCaseFix("This is a test Looks like you passed")
 	//lastElementArray := method.LastElement([]string{"hola","chau","como_estas"});
 	//deleteLastElementArray := method.PopElement([]string{"hola","chau","como_estas"})
@@ -28,7 +30,7 @@ func main(){
 	// 		for index,value := range prop {
 	// 			if prop[index] != valueDeleted {
 	// 				newArray = append(newArray, value)
-    //             }
+	//             }
 	// 		}
 	// 		return newArray, nil
 	// 	},
@@ -37,7 +39,6 @@ func main(){
 	// 	},
 	// }
 
-
 	//Objetos de funciones
 	// proxy := method.NewProxyValue()
 
@@ -45,7 +46,7 @@ func main(){
 	// if err != nil {
 	// 	fmt.Println("Error en Delete:", err)
 	// }
-	
+
 	// resultSet, err := proxy.Set(resultHandler, "holaaaaa")
 	// if err != nil {
 	// 	fmt.Println("Error en Set:", err)
@@ -62,11 +63,13 @@ func main(){
 
 	//Buscar alguna valor de una propiedad en un array de objetos
 	// folderPath := "./tablasTemporadas" // Ruta a la carpeta donde están los archivos JSON
-    // keyword := "Olympics Men"
-    // searchJSON.SearchObjectTeam(keyword, folderPath)
+	// keyword := "Olympics Men"
+	// searchJSON.SearchObjectTeam(keyword, folderPath)
 
 	// Buscada de arbol inOrder
 	// nodeTree.RecorrerEjemplo()
 
-	
+	capitalized := alternativeCapitalization.Capitalize("Hola")
+	fmt.Println(capitalized)
+
 }
