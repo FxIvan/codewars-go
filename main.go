@@ -1,10 +1,9 @@
 package main
 
 import (
-	"fmt"
 	_ "fmt"
 
-	"github.com/codewars/alternativeCapitalization"
+	"github.com/codewars/consecutiveFibNumbers"
 	_ "github.com/codewars/method"
 	_ "github.com/codewars/nodeTree"
 	_ "github.com/codewars/object"
@@ -69,7 +68,9 @@ func main() {
 	// Buscada de arbol inOrder
 	// nodeTree.RecorrerEjemplo()
 
-	capitalized := alternativeCapitalization.Capitalize("Hola")
-	fmt.Println(capitalized)
+	// capitalized := alternativeCapitalization.Capitalize("Hola")
+	// fmt.Println(capitalized)
+
+	consecutiveFibNumbers.ConsecutiveFibonacci()
 
 }
