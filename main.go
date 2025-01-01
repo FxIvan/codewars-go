@@ -1,12 +1,13 @@
 package main
 
 import (
+	"fmt"
 	_ "fmt"
 
-	"github.com/codewars/consecutiveFibNumbers"
 	_ "github.com/codewars/method"
 	_ "github.com/codewars/nodeTree"
 	_ "github.com/codewars/object"
+	cacke "github.com/codewars/peteTheBaker"
 	_ "github.com/codewars/searchJSON"
 	_ "github.com/codewars/searchWord"
 	_ "github.com/codewars/toWeirdCase"
@@ -71,6 +72,36 @@ func main() {
 	// capitalized := alternativeCapitalization.Capitalize("Hola")
 	// fmt.Println(capitalized)
 
-	consecutiveFibNumbers.ConsecutiveFibonacci()
+	// ******** NO PUDE RESOLVERLO ********************************* //
+	// ******* consecutiveFibNumbers.ConsecutiveFibonacciFR() ****** //
+	// ************************************************************* //
 
+	// https://www.codewars.com/kata/56f78a42f749ba513b00037f
+
+	/*objRecipe := map[string]int{
+		"flour": 30, "sugar": 200, "eggs": 5,
+	}*/
+
+	/*objRecipe := map[string]int{
+		"apples": 3, "flour": 300, "sugar": 150, "milk": 100, "oil": 100,
+	}*/
+
+	/*available := map[string]int{
+		"flour": 100, "sugar": 400, "eggs": 15, "milk": 200,
+	}*/
+
+	objRecipe := map[string]int{
+		"apples": 3, "flour": 300, "milk": 100, "oil": 100, "sugar": 150,
+	}
+
+	available := map[string]int{
+		"apples": 15, "flour": 2000, "milk": 2000, "oil": 20, "sugar": 500,
+	}
+
+	/*available := map[string]int{
+		"sugar": 500, "flour": 2000, "milk": 2000,
+	}*/
+	output := cacke.Cakes(objRecipe, available)
+	fmt.Print("Output: ", output, "\n")
+	// FIN del reto: // https://www.codewars.com/kata/56f78a42f749ba513b00037f
 }
