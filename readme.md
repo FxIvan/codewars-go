@@ -19,15 +19,6 @@
 
 
 |Problema|Solucion|
-|---|---|
-|panic: runtime error: invalid memory address or nil pointer dereference
-[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x48a930]
-
-goroutine 1 [running]:
-github.com/codewars/peteTheBaker.Cakes(0x496240?, 0xc00009ce10)
-        /home/almendra/codewars/peteTheBaker/cackes.go:56 +0x210
-main.main()
-        /home/almendra/codewars/main.go:96 +0x205
-exit status 2| Se debe verificar que las variables sean diferente a nil si se utiliza punteros. Paso en el archivo cackes.go|
+| panic: runtime error: invalid memory address or nil pointer dereference [signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x48a930] goroutine 1 [running]: github.com/codewars peteTheBaker.Cakes(0x496240?, 0xc00009ce10) /home/almendra/codewars/peteTheBaker/cackes.go:56 +0x210 main.main() /home/almendra/codewars/main.go:96 +0x205 exit status 2 | Se debe verificar que las variables sean diferente a nil si se utiliza punteros. Paso en el archivo cackes.go|
 
 
