@@ -16,9 +16,11 @@
 | strings.Builder | Cuando concatenamos con "+", Go crea una nueva cadena en memoria cada vez. Por ejemplo, "hola" + " buen día" crea "hola buen día" en memoria; si después concatenamos "hola" + " buenas tardes", se genera una segunda cadena en memoria. Esto es ineficiente si necesitamos muchas concatenaciones (como en un libro), ya que crea múltiples copias en memoria. strings.Builder usa un buffer, que permite reutilizar el mismo espacio de memoria para añadir varios elementos sin crear una nueva cadena cada vez. |
 |strings.HasPrefix("codecademy","code") -> true  strings.HasPrefix("GitHub","Hub") -> false | La función HasPrefix() devuelve un valor booleano que indica si una cadena dada comienza con un prefijo determinado. El método devuelve verdadero si la cadena comienza con el prefijo; de lo contrario, devuelve falso. |
 
-
-
-|Problema|Solucion|
-| panic: runtime error: invalid memory address or nil pointer dereference [signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x48a930] goroutine 1 [running]: github.com/codewars peteTheBaker.Cakes(0x496240?, 0xc00009ce10) /home/almendra/codewars/peteTheBaker/cackes.go:56 +0x210 main.main() /home/almendra/codewars/main.go:96 +0x205 exit status 2 | Se debe verificar que las variables sean diferente a nil si se utiliza punteros. Paso en el archivo cackes.go|
+### Problema
+```
+| panic: runtime error: invalid memory address or nil pointer dereference [signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x48a930] goroutine 1 [running]: github.com/codewars peteTheBaker.Cakes(0x496240?, 0xc00009ce10) /home/almendra/codewars/peteTheBaker/cackes.go:56 +0x210 main.main() /home/almendra/codewars/main.go:96 +0x205 exit status 2 
+```
+### Solucion
+Se debe verificar que las variables sean diferente a nil si se utiliza punteros. Paso en el archivo cackes.go|
 
 
