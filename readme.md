@@ -15,6 +15,9 @@
 | bufio.NewScanner | El escáner es particularmente útil para leer datos línea por línea o palabra por palabra (tokens) de forma sencilla y eficiente. |
 | strings.Builder | Cuando concatenamos con "+", Go crea una nueva cadena en memoria cada vez. Por ejemplo, "hola" + " buen día" crea "hola buen día" en memoria; si después concatenamos "hola" + " buenas tardes", se genera una segunda cadena en memoria. Esto es ineficiente si necesitamos muchas concatenaciones (como en un libro), ya que crea múltiples copias en memoria. strings.Builder usa un buffer, que permite reutilizar el mismo espacio de memoria para añadir varios elementos sin crear una nueva cadena cada vez. |
 |strings.HasPrefix("codecademy","code") -> true  strings.HasPrefix("GitHub","Hub") -> false | La función HasPrefix() devuelve un valor booleano que indica si una cadena dada comienza con un prefijo determinado. El método devuelve verdadero si la cadena comienza con el prefijo; de lo contrario, devuelve falso. |
+|Agregar validaciones al inicio. Ej: 	if len(grafo) == 0 { return totalPeso // Retorna 0 si el grafo está vacío } | Evita errores durante la ejecucion |
+|math.MinInt| Para no tener que inicializar con 0, Incorrecto: maxPeso := 0; Correcto: maxPeso := math.MinInt |
+
 
 ### Problema
 ```
