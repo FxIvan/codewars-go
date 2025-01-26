@@ -3,6 +3,8 @@ package greedy
 // Grafo representado como lista de adyacencia
 type Grafo map[int]map[int]int
 
+// Encuentra la mejor solucion del optimo local actual para encontrar el siguiente mejor optimo local
+
 func Greedy(grafo Grafo, inicio int) int {
 	visitados := make(map[int]bool)
 	totalPeso := 0

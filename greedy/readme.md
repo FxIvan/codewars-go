@@ -55,3 +55,34 @@ Una vez que decides ir al nodo 1, el algoritmo no vuelve a considerar el nodo 2 
 Conclusión:
 Esto es esperado en un algoritmo greedy. Si quieres asegurarte de visitar todos los nodos o encontrar el camino más corto a todos ellos, necesitas un algoritmo diferente, como Dijkstra o BFS/DFS modificados para ese propósito.
 ```
+
+Ejemplo donde se podria implementar un algoritmo greedy:
+```
+El algoritmo greedy es útil en problemas donde tomar decisiones óptimas localmente también conduce a una solución globalmente óptima. Esto ocurre generalmente en problemas que tienen una estructura de optimalidad de subproblemas o cumplen la propiedad greedy (es decir, las decisiones locales óptimas siempre llevan a la mejor solución global).
+
+Ejemplos comunes de uso:
+1. Problemas de optimización combinatoria:
+Problema de la mochila fraccionaria (Fractional Knapsack): Se seleccionan objetos para maximizar el valor total dentro de un límite de peso, eligiendo primero los objetos con mayor valor por unidad de peso.
+Problema de cobertura de intervalos: Seleccionar la mínima cantidad de intervalos que cubren una línea de números.
+2. Teoría de grafos:
+Árbol de expansión mínima (MST): Algoritmos como Kruskal o Prim usan greedy para construir el MST seleccionando las aristas de menor peso.
+Algoritmo de Dijkstra: Encuentra el camino más corto desde un nodo a todos los demás, seleccionando el nodo con la menor distancia acumulada en cada paso.
+Algoritmo de coloración de grafos: Asignar colores a los nodos de un grafo con el mínimo número de colores.
+3. Problemas de programación de tareas:
+Problema de la selección de actividades (Activity Selection Problem): Seleccionar el máximo número de actividades que no se solapen, ordenándolas por su tiempo de finalización.
+Planificación de tareas con plazos: Maximizar las tareas completadas antes de su fecha límite, eligiendo aquellas con mayor beneficio.
+4. Compresión y codificación:
+Codificación de Huffman: Utiliza greedy para construir un árbol binario óptimo para la codificación de datos, basado en la frecuencia de los caracteres.
+5. Optimización financiera:
+Cambio de monedas (Coin Change): Encontrar el mínimo número de monedas para una cantidad dada (solo funciona si las denominaciones cumplen ciertas propiedades).
+6. Sistemas de redes y telecomunicaciones:
+Maximización del ancho de banda: Seleccionar rutas óptimas para maximizar la capacidad de transmisión.
+Enrutamiento en redes: Encontrar caminos más cortos o eficientes para la transmisión de datos.
+Ventajas:
+Simplicidad y eficiencia: Generalmente tiene tiempos de ejecución más rápidos porque toma decisiones locales inmediatas sin explorar todo el espacio de soluciones.
+Aplicable a problemas en tiempo real: Por ejemplo, encontrar rutas más cortas en un mapa GPS mientras conduces.
+Limitaciones:
+No siempre garantiza una solución global óptima.
+Solo funciona bien si el problema cumple las propiedades greedy mencionadas.
+En resumen, el enfoque greedy es poderoso y práctico en problemas bien estructurados, pero es importante analizar si las decisiones locales conducen a la mejor solución global antes de aplicarlo.
+```
