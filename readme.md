@@ -27,3 +27,5 @@
 Se debe verificar que las variables sean diferente a nil si se utiliza punteros. Paso en el archivo cackes.go|
 
 
+[NOTAS](https://docs.google.com/document/d/1fWRgd2q1P5VzxhLDA0Aw--kVTLPxS81V8kpMmKM_-wc/edit?usp=sharing)
+
