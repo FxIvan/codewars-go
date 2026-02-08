@@ -3,13 +3,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/codewars/countIPAddresses"
 	_ "github.com/codewars/faberger"
 	_ "github.com/codewars/method"
 	_ "github.com/codewars/nodeTree"
 	_ "github.com/codewars/object"
 	_ "github.com/codewars/peteTheBaker"
 	_ "github.com/codewars/recursive"
+	"github.com/codewars/rgb_to_hex"
 
 	// recursive "github.com/codewars/recursive"
 	_ "github.com/codewars/searchJSON"
@@ -148,5 +148,11 @@ func main() {
 	// fmt.Print("\n String List", list, "\n")
 	// fmt.Println(countIPAddresses.IpsBetween("10.0.0.0", "10.0.0.50"))
 	// fmt.Println(countIPAddresses.IpsBetween("20.0.0.10", "20.0.1.0"))
-	fmt.Println(countIPAddresses.IpsBetween("10.11.12.13", "10.11.13.0"))
+	// fmt.Println(countIPAddresses.IpsBetween("10.11.12.13", "10.11.13.0"))
+
+	//////////////////////////////////////////////////////////////////////////////
+	// RGB To Hex Conversion
+	// https://www.codewars.com/kata/513e08acc600c94f01000001/train/go
+	// Color blanco en el ejemplo que seria #FFFFFF
+	fmt.Print(rgb_to_hex.GetColorHexadecimal(255) + rgb_to_hex.GetColorHexadecimal(255) + rgb_to_hex.GetColorHexadecimal(255))
 }
