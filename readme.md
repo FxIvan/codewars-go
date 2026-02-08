@@ -17,6 +17,14 @@
 |strings.HasPrefix("codecademy","code") -> true  strings.HasPrefix("GitHub","Hub") -> false | La función HasPrefix() devuelve un valor booleano que indica si una cadena dada comienza con un prefijo determinado. El método devuelve verdadero si la cadena comienza con el prefijo; de lo contrario, devuelve falso. |
 |Agregar validaciones al inicio. Ej: 	if len(grafo) == 0 { return totalPeso // Retorna 0 si el grafo está vacío } | Evita errores durante la ejecucion |
 |math.MinInt| Para no tener que inicializar con 0, Incorrecto: maxPeso := 0; Correcto: maxPeso := math.MinInt |
+| func GetColorHexadecimal(rgbaCode int) string {} | Sintaxis para crear una función en Go: `func` seguido del nombre, parámetros entre paréntesis con su tipo, y el tipo de retorno. El cuerpo va entre llaves. |
+| / | Operador de división entera. Ejemplo: `15 / 16` devuelve `0`, `255 / 16` devuelve `15`. Descarta la parte decimal. |
+| % | Operador módulo, devuelve el resto de una división. Ejemplo: `15 % 16` devuelve `15`, `255 % 16` devuelve `15`. Útil para obtener el residuo. |
+| hexMap := map[int]string{10: "A", 11: "B"} | Sintaxis para crear un mapa/diccionario en Go: `map[TipoClave]TipoValor{clave1: valor1, clave2: valor2}`. Se usa para asociar claves con valores. |
+| value, ok := hexMap[key] | Pattern para verificar si una clave existe en un map. `ok` es `true` si la clave existe, `false` si no. En Go no se puede usar OR para valores null; se debe usar este pattern de dos valores. |
+| strconv.Itoa(number) | Convierte un entero (int) a string. Ejemplo: `strconv.Itoa(15)` devuelve `"15"`. Necesita importar el paquete `strconv`. |
+| if rgbaCode < 0 { return "00" } | Sintaxis del condicional if en Go. No requiere paréntesis alrededor de la condición. Las llaves son obligatorias incluso para una sola línea. |
+| return valueOne + valueTwo | En Go, el operador `+` concatena strings. Ejemplo: `"A" + "5"` devuelve `"A5"`. |
 
 
 ### Problema
